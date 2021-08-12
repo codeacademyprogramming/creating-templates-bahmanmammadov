@@ -1,0 +1,28 @@
+.store{
+    width: 100%;
+    height: 200px;
+    background-color: $color-body;
+ 
+   
+    .store__h2{
+        color: $color-hover;
+        font-weight: 700;
+        margin-bottom: 8px;
+        font-size: 40px;
+        line-height: 56px;
+        margin-left: 115px;
+        margin-top: 70px;
+        display: inline-block;
+    }
+    .store__button{
+    
+        @include button-big;
+        
+        &:hover{
+            background-color: $color-primary;
+            border: 1px solid $color-hover;
+            transition: .6s;
+        }
+    }
+}
+

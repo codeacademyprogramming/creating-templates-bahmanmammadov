@@ -1,0 +1,163 @@
+.container{
+    .row{
+        h2{
+            color: #c9ffc7;
+            text-align: center;
+            font-size: 34px;
+            display: block;
+        }
+        p{
+            color: $color-text;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            display: block;
+
+        }
+        .contact-part{
+            display: flex;
+            
+            .contact-part__left{
+                height: 720px;
+                background-color: rgb(59,64,70);
+                margin-right: 20px;
+                border-radius: 8px;
+                h3{
+                    margin-left: 35px;
+                    margin-top: 30px;
+                    color: white;
+                    font-size: 20px;
+                }
+                .contact-part__elaqe{
+                    display: flex;
+                    margin-left: 20px;
+                    
+                    .icon-elaqe{
+                        height:72px;
+                        width: 72px;
+                        
+                        margin-top: 30px;
+                       
+                      
+                        
+                        
+                       
+                    }
+                    .information{
+                        p{
+                            font-size: 16px;
+                            float: left;
+                            margin-left: 10px;
+                        }
+                        h6{
+                            margin-top: 25px;
+                            font-size: 18px;
+                            color: white;
+                            margin-left: 10px;
+
+                        }
+
+                    }
+                    
+                }
+                .contact-part__icons{
+                    display: flex;
+                    .iconth{
+                        width: 50px;
+                        height: 50px;
+                        margin: 25px;
+
+                        svg{
+                            color: white;
+                        }
+                    }
+                }
+
+
+            }
+            .contact-part__right{
+
+                height: 720px;
+                background-color: rgb(59,64,70);
+                margin-right: 20px;
+                border-radius: 8px;
+                .hh4{
+                    padding: 30px 20px 0px 30px;
+                     color: white;
+                }
+                .pp1{
+                    margin-left: -300px;
+                    color: rgb(157,160,148);
+                }
+                .pyp1{
+                    @include button;
+                    float: right;
+                    margin-top: 35px;
+                    margin-right: 50px;
+                }
+                .wrapper{
+                    // width: 450px;
+                    background: rgb(34,37,44);
+                    // padding: 70px;
+                    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    // height: 100px;
+                    width: 80%;
+                    margin:0 auto;
+                    margin-top: 30px;
+                    border-radius: 8px;
+                    
+
+                    
+
+                }
+            
+                
+                .wrapper .input-data{
+                    width: 100%;
+                    height: 60px;
+                    position: relative;
+                    background: rgb(34,37,44);
+                    border-radius: 8px;
+                    label{
+                        margin-left: 10px;
+                    }
+                 
+
+                }
+                
+                .wrapper .input-data input{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    
+                    font-size: 17px;
+                    background: rgb(34,37,44);
+                    outline: none;
+                    color: white;
+                    margin-left: 10px;
+                    
+
+
+                }
+                
+                
+                .input-data input:focus ~ label,
+                .input-data input:valid ~ label{
+                    transform:translateY(-20px);
+                    font-size: 15px;
+                    
+                }
+                .wrapper .input-data label{
+                    position: absolute;
+                    left: 0;
+                    bottom: 20px;
+                    color: grey;
+                    pointer-events: none;
+                    transition: all 0.3s ease;
+                }
+                
+                
+        }
+    }
+    }
+}
